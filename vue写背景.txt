@@ -1,0 +1,12 @@
+<a href="javascript:;" class="tupian_case" :style="imgPic">
+export default {
+		data() {
+			return {
+				imgPic: {
+					backgroundImage:"url("+ require("../img/jpg.png") +")",
+					backgroundRepeat:"no-repeat",
+					backgroundSize:"cover",
+				}
+			}
+		}
+	}

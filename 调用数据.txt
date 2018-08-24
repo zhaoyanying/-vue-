@@ -1,0 +1,17 @@
+1、在build/dev-server.js中 var app = express()后面增加
+var appData = require("../data.json");
+2、定义变量
+   var seller = appData.seller;
+   var goods = appData.goods;
+   var ratings = appData.ratings;
+3、编写路由
+   var apiRoutes = express.Router();
+4、调用这个接口
+   apiRoutes.get("/seller,function(req, res){
+      res.json({
+	errno: 0;
+	data:seller
+      });
+   }")
+5、app.user("/api", apiRoutes);
+   

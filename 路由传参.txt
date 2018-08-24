@@ -1,0 +1,8 @@
+{
+    path:'path/:参数名'， 必须有冒号 ：
+    componet:组件名
+}
+
+在当前页面获取 this.$route.params.参数名
+
+路由调取 /组件名/0

@@ -1,0 +1,6 @@
+1、下载node.js
+2、全局安装vue-cli npm install -g vue-cli
+3、创建vue-cli项目 vue init webpack name(出现project name(ss)按回车)
+4、进入项目中 cd name
+5、运行 npm run dev
+6、打包 npm run build

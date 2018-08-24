@@ -1,0 +1,10 @@
+if (options.extract) {
+      return ExtractTextPlugin.extract({
+        use: loaders,
+        fallback: 'vue-style-loader',
+        publicPath:'../../',//此处增加这段代码
+      })
+    } else {
+      return ['vue-style-loader'].concat(loaders)
+    }
+  }

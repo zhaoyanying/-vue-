@@ -1,0 +1,31 @@
+子组件代码
+<template>
+	<div>
+		<div id="actionsheet"></div>
+		<div class="actionsheet_box">
+			<div class="actionsheet_content">
+				<h3>更换头像</h3>
+				<span>更换头像</span>
+			</div>
+			<div class="actionsheet_cancel" @click="cancel">取消</div>
+		</div>
+	</div>
+</template>
+
+<script>
+	export default{
+		methods: {
+			cancel:function(){
+				this.$emit('abc',false)
+			}
+		}
+	}
+</script>
+父组件
+<action-sheet v-show="xianshi" v-on:abc='fun'></action-sheet>
+methods: {
+				fun:function(data){
+				this.xianshi=data;
+				console.log(this.xianshi)
+			}
+		},

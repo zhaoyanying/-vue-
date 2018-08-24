@@ -1,0 +1,4 @@
+ {
+      path: '/xs_list',
+      redirect:'/xs_list/haveHand'
+},
